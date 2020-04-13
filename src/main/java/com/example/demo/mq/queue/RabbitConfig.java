@@ -38,45 +38,4 @@ public class RabbitConfig {
         return BindingBuilder.bind(dirQueue).to(directExchange).with("directTest");
     }
 
-    @Bean
-    public MessageConverter jsonMessageConverter() {
-        return new Jackson2JsonMessageConverter();
-    }
-
-    @Bean
-    public RetryTemplate retryTemplate() {
-        RetryTemplate retryTemplate = new RetryTemplate();
-        retryTemplate.setBackOffPolicy(backOffPolicy());
-        retryTemplate.setRetryPolicy(retryPolicy());
-        return retryTemplate;
-    }
-
-    @Bean
-    public ExponentialBackOffPolicy backOffPolicy() {
-        ExponentialBackOffPolicy backOffPolicy = new ExponentialBackOffPolicy();
-        backOffPolicy.setInitialInterval(1000);
-        backOffPolicy.setMaxInterval(100000);
-        return backOffPolicy;
-    }
-
-    @Bean
-    public SimpleRetryPolicy retryPolicy() {
-        SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
-        retryPolicy.setMaxAttempts(3);
-        return retryPolicy;
-    }
-
-
-
-    @Bean
-    @Primary
-    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
-        RabbitTemplate template = new RabbitTemplate(connectionFactory);
-        template.setReplyTimeout(1000);
-        template.setMessageConverter(jsonMessageConverter());
-        template.setMandatory(true);
-        return template;
-    }
-
-
 }
