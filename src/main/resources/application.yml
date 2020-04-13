@@ -1,0 +1,73 @@
+mybatis-plus:
+  mapper-locations: classpath:mybatis/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.example.demo.model
+  check-config-location: true
+  configuration:
+    #是否开启自动驼峰命名规则（camel case）映射
+    map-underscore-to-camel-case: true
+    #全局地开启或关闭配置文件中的所有映射器已经配置的任何缓存
+    cache-enabled: false
+    call-setters-on-nulls: true
+    #配置JdbcTypeForNull, oracle数据库必须配置
+    jdbc-type-for-null: 'null'
+    #MyBatis 自动映射时未知列或未知属性处理策略 NONE：不做任何处理 (默认值), WARNING：以日志的形式打印相关警告信息, FAILING：当作映射失败处理，并抛出异常和详细信息
+    auto-mapping-unknown-column-behavior: warning
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
+    publisher-confirms: true
+    virtual-host: /
+  freemarker:
+    cache: false
+    charset: utf-8
+    enabled: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    master:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://114.55.27.239:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 565977989
+      type: com.alibaba.druid.pool.DruidDataSource
+    slave:
+      #      mysql 8.0配置
+      #      driver-class-name: com.mysql.cj.jdbc.Driver
+      #      username: root
+      #      password: root
+      #      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true
+      #      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://114.55.27.239:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 565977989
+      type: com.alibaba.druid.pool.DruidDataSource
+    prod:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://114.55.27.239:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 565977989
+      type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 2000
+    redisson:
+      # 配置单点模式
+      config: classpath:redisson-config.yml
+server:
+  port: 8085
+aliyun-oss:
+  #bucket名称
+  bucketApp:
+  endpoint:
+  #Bucket域名
+  domain:
+  accessKeyId:
+  accessKeySecret:
+
