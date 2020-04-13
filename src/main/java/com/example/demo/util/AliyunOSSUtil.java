@@ -26,8 +26,7 @@ import java.util.UUID;
 /**
  * description: 阿里云util
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Component

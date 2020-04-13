@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * description:userInfoMapper
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Repository

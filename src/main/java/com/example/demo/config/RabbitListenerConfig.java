@@ -12,8 +12,7 @@ import org.springframework.messaging.handler.annotation.support.MessageHandlerMe
 /**
  * description:rabbitmq监听消息转换配置
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Configuration

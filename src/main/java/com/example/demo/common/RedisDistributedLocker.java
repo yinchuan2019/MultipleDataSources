@@ -10,8 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * description: redis锁实现类
  * create: 2020/3/13 11:52
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Component

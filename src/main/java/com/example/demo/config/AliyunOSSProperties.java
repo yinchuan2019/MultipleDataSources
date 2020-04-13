@@ -7,8 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * description:阿里云配置文件实体
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Component

@@ -3,8 +3,7 @@ package com.example.demo.enums;
 /**
  * description:返回结果code枚举
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 public enum ResultCode {

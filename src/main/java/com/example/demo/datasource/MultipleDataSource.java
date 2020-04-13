@@ -22,8 +22,7 @@ import java.util.HashMap;
 /**
  * description: 多数据源配置
  * create: 2019/1/29 13:49
- *
- * @author NieMingXin
+
  */
 @Configuration
 public class MultipleDataSource {

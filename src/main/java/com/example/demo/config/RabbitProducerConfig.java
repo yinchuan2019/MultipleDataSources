@@ -12,8 +12,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * description:rabbitmq消息生产者配置ack与消息转换
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Configuration

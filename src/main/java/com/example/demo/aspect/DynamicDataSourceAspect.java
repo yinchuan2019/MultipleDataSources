@@ -16,8 +16,7 @@ import java.lang.reflect.Method;
 /**
  * description: 数据源切面
  * create: 2019/1/29 15:22
- *
- * @author NieMingXin
+
  */
 @Component
 @Aspect

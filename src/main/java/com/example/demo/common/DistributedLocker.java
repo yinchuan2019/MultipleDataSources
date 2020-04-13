@@ -7,8 +7,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * description: redis锁
  * create: 2020/3/13 11:52
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 public interface DistributedLocker {

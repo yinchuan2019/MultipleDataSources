@@ -18,8 +18,7 @@ import java.util.List;
 /**
  * description: test
  * create: 2019/2/13 14:12
- *
- * @author NieMingXin
+
  */
 @RestController
 @Api(value = "test")

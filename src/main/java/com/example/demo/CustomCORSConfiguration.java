@@ -9,8 +9,6 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * description:自定义CORS
  * create: 2019/2/13 16:45
- *
- * @author NieMingXin
  */
 @Configuration
 public class CustomCORSConfiguration {

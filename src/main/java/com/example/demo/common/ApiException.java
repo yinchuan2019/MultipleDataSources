@@ -6,8 +6,7 @@ import com.example.demo.annotation.ResponseCode;
 /**
  * description:业务异常基类
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @ResponseCode

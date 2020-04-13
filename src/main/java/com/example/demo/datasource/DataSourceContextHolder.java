@@ -6,8 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * description: 数据源上下文
  * create: 2019/1/29 13:49
- *
- * @author NieMingXin
+
  */
 @Slf4j
 public class DataSourceContextHolder {

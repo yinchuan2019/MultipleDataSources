@@ -11,8 +11,7 @@ import java.io.Serializable;
 /**
  * description:统一封装返回结果
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Data

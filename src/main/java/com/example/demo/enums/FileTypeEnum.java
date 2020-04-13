@@ -3,8 +3,7 @@ package com.example.demo.enums;
 /**
  * description:文件类型枚举
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 public enum FileTypeEnum {

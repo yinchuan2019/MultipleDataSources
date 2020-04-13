@@ -6,8 +6,7 @@ import com.example.demo.common.ApiException;
 /**
  * description: 测试code
  * create: 2020/3/12 18:50
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @ResponseCode("E11111")

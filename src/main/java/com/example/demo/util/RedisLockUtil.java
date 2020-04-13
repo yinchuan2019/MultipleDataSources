@@ -12,8 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * description:redis分布式锁 redisson实现
  * create: 2020/3/13 11:45
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @Component

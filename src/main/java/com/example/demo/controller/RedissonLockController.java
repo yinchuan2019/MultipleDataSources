@@ -14,8 +14,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * description:
  * create: 2020/3/13 11:55
- *
- * @author NieMingXin
+
  * @version 1.0
  */
 @RestController
